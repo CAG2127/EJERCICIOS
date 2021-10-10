@@ -5,6 +5,8 @@ function parameter(){
      console.log(parametro);
 }
 
+//parameter()
+
 //SEGUNDO EJERCICIO 
 
 
@@ -12,11 +14,6 @@ let numero1=0;
 let numero2=0;
 let resultado = 0;
 const pi = 3.141592;
-let lista1 = [10,4,2,20,5]; 
-let lista2 = [0,0,0,1,0];
-let lista3 = [-13,10,9,8,0,2000,-1];
-
-
 
 function add(numero1,numero2){
     if (typeof(numero1)!="number" && typeof(numero2)!="number"){
@@ -28,7 +25,7 @@ function add(numero1,numero2){
     }
    
 }
-
+//add()
 
 //TERCER EJERCICIO
 
@@ -43,7 +40,7 @@ function subtract(numero1,numero2){
     }
    
 }
-
+//subtract()
 
 //CUARTO EJERCICIO
 
@@ -57,7 +54,7 @@ function equal(numero1,numero2){
     }
    
 }
-
+//equal()
 
 
 //QUINTO EJERCICIO
@@ -73,7 +70,7 @@ function division(numero1,numero2){
     }
    
 }
-
+//division()
 
 //SEXTO EJERCICIO
 
@@ -88,7 +85,7 @@ else{
 }
       
 }
-
+//area()
 
 
 //SEPTIMO EJERCICIO
@@ -103,7 +100,7 @@ function metrosAKilometros(numero1){
     }
         
 }
-
+//metrosAKilometros()
 
 // OCTAVO EJERCICIO
 
@@ -120,24 +117,71 @@ function celsiusAFahrenheit(numero1){
    
 }
 
+//celsiusAFahrenheit()
 
 // NOVENO EJERCICIO
 
 
 function listas(lista){
+    var nuneroMayor = lista[0];
+    var numeroMenor = lista[0];
     for(let i=0; i<lista.length; i++){
-        console.log(lista[i])
-     if () {
+        
+     if (lista[i]>nuneroMayor) {
+         nuneroMayor=lista[i]
         
      }
+     else if(lista[i]<numeroMenor){
+         numeroMenor=lista[i]
 
+     }
+     
+}
+console.log("EL NUMERO MAYOR ES: " + nuneroMayor);
+console.log("EL NUMERO MENOR ES: " + numeroMenor);
 
-   }
     
 }
-listas(lista1)
+// listas([])
 
 
+//EJERCICIO DECIMO
+
+function exponencial(base,exponente){
+    resultado=0;
+    if (typeof (base) != "number" && typeof (exponente) != "number"){
+        console.log("solo recibo numeros")
+    }
+    else{
+        resultado=base**exponente;
+        console.log("base: "+base)
+        console.log("exponente: "+exponente)
+        console.log("resultado: "+resultado)
+    }
+
+   
+
+}
+
+//exponencial("")
+
+//EJERCICIO UNDECIMO
+
+function contry(cantidad){
+    if (typeof (cantidad) != "number" && cantidad != null){
+        console.log("solo recibo numeros")
+    }
+    else{
+        for(let i=0; i<cantidad ;i++ ){
+            var name= prompt ("ingrese nombre del pais");
+            var lengthcharacteres = name.length;
+            alert("EL PAIS TIENE " + lengthcharacteres + " letras");
+        }
+        
+    }
+}
+
+//contry(2)
 
 
 
