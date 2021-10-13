@@ -16,7 +16,7 @@ let resultado = 0;
 const pi = 3.141592;
 
 function add(numero1,numero2){
-    if (typeof(numero1)!="number" && typeof(numero2)!="number"){
+    if (typeof(numero1)!="number" || typeof(numero2)!="number"){
         console.log("ingresa solo numeros");
     }
     else{
@@ -31,7 +31,7 @@ function add(numero1,numero2){
 
 
 function subtract(numero1,numero2){
-    if (typeof(numero1)!="number" && typeof(numero2)!="number"){
+    if (typeof(numero1)!="number" || typeof(numero2)!="number"){
         console.log("ingresa solo numeros");
     }
     else{
@@ -45,7 +45,7 @@ function subtract(numero1,numero2){
 //CUARTO EJERCICIO
 
 function equal(numero1,numero2){
-    if (typeof(numero1)!="number" && typeof(numero2)!="number"){
+    if (typeof(numero1)!="number" || typeof(numero2)!="number"){
         console.log("ingresa solo numeros");
     }
     else{
@@ -61,7 +61,7 @@ function equal(numero1,numero2){
 
 
 function division(numero1,numero2){
-    if (typeof(numero1)!="number" && typeof(numero2)!="number"){
+    if (typeof(numero1)!="number" || typeof(numero2)!="number"){
         console.log("ingresa solo numeros");
     }
     else{
@@ -149,7 +149,7 @@ console.log("EL NUMERO MENOR ES: " + numeroMenor);
 
 function exponencial(base,exponente){
     resultado=0;
-    if (typeof (base) != "number" && typeof (exponente) != "number"){
+    if (typeof (base) != "number" || typeof (exponente) != "number"){
         console.log("solo recibo numeros")
     }
     else{
